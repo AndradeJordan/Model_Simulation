@@ -22,7 +22,7 @@ with correlation $\rho$ between the Brownian Motions $W_1$ and $W_2$.
 I value call's pricing and put's pricing using a Monte Carlo (MC) approach on both models :
 Under $\mathbb{Q}$, the pay-off $P$ is as follows:
 
-$\mathbb{E}^{\mathbb{Q}} [e^{-rT} P]$ where $P = ( S_T - K )_{+}$ for a call or $P = ( K - S_T )_{+}$ $$(x)_{+}$$ for a put.
+$\mathbb{E}^{\mathbb{Q}} [e^{-rT} P]$ where $P = (S_T - K)_{+}$ for a call or $P = (K - S_T)_{+}$ for a put.
 
 
 
