@@ -62,7 +62,7 @@ class Heston_Model(AbsParameter) :
             parameter = [price, sigma, error]
             return parameter
         elif tag == 'put':
-            price = np.exp(- r * T) * np.mean(K - np.maximum(self.Spaths[-1], 0))
+            price = np.exp(- r * T) * np.mean(np.maximum(K - self.Spaths[-1], 0))
             payoff = np.exp(- r * T) * np.maximum(K - self.Spaths[-1], 0)
             sigma = np.std(payoff)  # standard deviation estimator  (ecart type de monte_carlo)
             error = 1.96 * sigma / np.sqrt(N)
